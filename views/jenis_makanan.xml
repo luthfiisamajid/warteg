@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <!-- warteg.jenis tree view -->
+    <record id="warteg_jenis_view_tree" model="ir.ui.view">
+        <field name="name">Jenis Makanan</field>
+        <field name="model">warteg.jenis</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="deskripsi"/>
+                <field name="person_in_charge"/>
+                <field name="posisi_rak"/>
+                <field name="jenis_ids"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <!-- warteg.jenis form view -->
+    <record id="warteg_jenis_view_form" model="ir.ui.view">
+        <field name="name">Input Jenis Makanan</field>
+        <field name="model">warteg.jenis</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <!-- Add your fields here -->
+                        <field name="name"/>
+                        <field name="deskripsi"/>
+                    </group>
+                    <group>
+                        <field name="person_in_charge"/>
+                        <field name="posisi_rak"/>
+                    </group>
+                    <group>
+                        <field name="jenis_ids"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- warteg.jenis action window -->
+    <record id="warteg_jenis_action" model="ir.actions.act_window">
+        <field name="name">Jenis Makanan</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">warteg.jenis</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="warteg_jenis_menu_act" 
+              name="Jenis Makanan" 
+              parent="warteg_menu_categ" 
+              action="warteg_jenis_action" 
+              sequence="10"/>
+
+</odoo>

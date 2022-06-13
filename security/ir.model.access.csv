@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_warteg_jenis,access.warteg_jenis,model_warteg_jenis,,1,1,1,1
+access_warteg_detail_makanan,access.warteg_detail_makanan,model_warteg_detail_makanan,,1,1,1,1
+access_warteg_detail_penjualan,access.warteg_detail_penjualan,model_warteg_detail_penjualan,,1,1,1,1
+access_warteg_penjualan,access.warteg_penjualan,model_warteg_penjualan,,1,1,1,1
